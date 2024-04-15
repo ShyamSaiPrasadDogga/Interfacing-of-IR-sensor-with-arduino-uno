@@ -1,0 +1,14 @@
+const int irSensorPin = A0; 
+int irSensorValue = 0;
+
+void setup() {
+  pinMode(irSensorPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  irSensorValue = analogRead(irSensorPin);
+  Serial.print("IR Sensor Value: ");
+  Serial.println(irSensorValue);
+  delay(1000);
+}
