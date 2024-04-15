@@ -1,0 +1,15 @@
+Hardware Requirements:-
+1)Arduino Uno board
+2)Infrared (IR) sensor (e.g., KY-022)
+3)Jumper wires
+4)Breadboard
+Software Requirements:-
+1)Arduino IDE (Download here)
+Arduino to IR Sensor connections:-
+Arduino Uno    IR Sensor
+   GND  ------  GND
+   5V   ------  VCC
+   A0   ------  OUT
+How it Work:-
+The Arduino code reads the analog value from the IR sensor connected to pin A0.
+The IR sensor outputs an analog voltage which is read by the Arduino's ADC (Analog to Digital Converter) and is then printed to the serial monitor.
